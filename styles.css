@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    margin-top: 20px;
+    font-size: 2.5rem;
+}
+
+.imgs {
+    width: 200px;
+    height: 170px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.imgs:hover {
+    transform: scale(1.1);
+}
+
+.selected-player {
+    border: 3px solid green;
+    box-shadow: 0 0 10px green;
+}
+
+.selected-computer {
+    border: 3px solid red;
+    box-shadow: 0 0 10px red;
+}
+
+#playerDisplay,
+#computerDisplay,
+#resultDisplay {
+    font-size: 1.5rem;
+    color: #444;
+    margin-top: 20px;
+}
+
+#resultDisplay {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .imgs {
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #playerDisplay,
+    #computerDisplay,
+    #resultDisplay {
+        font-size: 1.2rem;
+    }
+}
